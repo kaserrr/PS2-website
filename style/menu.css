@@ -1,0 +1,80 @@
+menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+menu #menu-languages {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--darkblue);
+    padding: 15px 20px;
+}
+
+menu nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--blue);
+    padding: 25px 20px;
+}
+
+menu nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 75%;
+}
+
+menu nav ul li {
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+menu nav ul li a:hover, menu nav ul  {
+    color: var(--yellow);
+    transition: ease-in-out 0.2s;
+}
+
+menu #menu-underbar {
+    background-color: var(--yellow);
+    padding: 5px;
+}
+
+menu #menu-logo {
+    position: absolute;
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--blue);
+    min-width: 160px;
+    padding: 5px 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.dropdown-content a {
+    color: var(--white);
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    transition: ease-in-out 0.2s;
+}
+
+.dropdown-content a:hover {
+    color: var(--yellow);
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
