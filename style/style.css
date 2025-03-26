@@ -44,3 +44,10 @@ a, li {
     text-decoration: none;
     color: var(--white);
 }
+
+@media screen and (max-width: 1000px) {
+    button, input[type="submit"], input[type="reset"] {
+        font-size: 14px;
+    }
+    
+}
