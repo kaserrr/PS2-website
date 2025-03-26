@@ -1,0 +1,14 @@
+.hero {
+    background-image: url('../media/images/home/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    padding: 0px 20px;
+}
