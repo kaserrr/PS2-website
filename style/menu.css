@@ -1,58 +1,76 @@
-menu {
+/* === Sticky Header === */
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-menu #menu-logo {
+/* === Logo === */
+#menu-logo {
     position: absolute;
     padding: 20px;
+    z-index: 1000;
 }
 
-menu #menu-languages {
+/* === Language Selector === */
+#menu-languages {
     display: flex;
     justify-content: flex-end;
     background-color: var(--darkblue);
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
-menu nav {
+#menu-languages img {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 30px;
+}
+
+/* === Navigation Bar === */
+nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     background-color: var(--blue);
     padding: 25px 20px;
+    height: 75px;
+    position: relative;
 }
 
-menu nav ul {
+/* === Navigation Items === */
+nav ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     list-style: none;
     gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
-menu nav ul li {
+nav ul li {
+    position: relative;
     cursor: default;
     margin-bottom: 5px;
 }
 
-menu nav ul li a:hover {
-    color: var(--yellow);
+/* === Links === */
+nav ul li a,
+nav ul li span {
+    color: var(--white);
+    text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
-menu #menu-underbar {
-    background-color: var(--yellow);
-    padding: 5px;
+nav ul li a:hover,
+nav ul li span:hover {
+    color: var(--yellow);
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
+/* === Dropdown === */
 .dropdown-content {
     position: absolute;
+    top: 100%;
+    left: 0;
     opacity: 0;
     visibility: hidden;
     background-color: var(--blue);
@@ -74,21 +92,32 @@ menu #menu-underbar {
     color: var(--yellow);
 }
 
+/* === Show dropdown on hover === */
 .dropdown:hover .dropdown-content {
     opacity: 1;
     visibility: visible;
 }
 
-menu nav #menu-hamburger {
+/* === Underbar === */
+#menu-underbar {
+    background-color: var(--yellow);
+    padding: 5px;
+}
+
+/* === Hamburger Menu Icon (hidden by default) === */
+#menu-hamburger {
     display: none;
 }
 
+/* === Responsive Rules === */
 @media screen and (max-width: 1000px) {
-    menu nav ul {
+    nav ul {
         display: none;
     }
 
-    menu nav #menu-hamburger {
+    #menu-hamburger {
         display: block;
+        cursor: pointer;
+        color: var(--white);
     }
 }
