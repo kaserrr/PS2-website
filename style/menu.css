@@ -8,7 +8,7 @@ header {
 /* === Logo === */
 #menu-logo {
     position: absolute;
-    padding: 20px;
+    padding: 20px 20%;
     z-index: 1000;
 }
 
@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: flex-end;
     background-color: var(--darkblue);
-    padding: 10px 20px;
+    padding: 10px 20%;
 }
 
 #menu-languages img {
@@ -32,7 +32,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     background-color: var(--blue);
-    padding: 25px 20px;
+    padding: 25px 20%;
     height: 75px;
     position: relative;
 }
@@ -110,7 +110,12 @@ nav ul li span:hover {
 }
 
 /* === Responsive Rules === */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1450px) {
+    #menu-logo, #menu-languages, nav {
+        padding-left: 10%;
+        padding-right: 10%; 
+    }
+
     nav ul {
         display: none;
     }
