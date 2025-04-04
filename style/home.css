@@ -18,8 +18,7 @@
     flex-direction: row;
     gap: 50px;
     justify-content: space-between;
-    padding: 20px 0px;
-    padding: 20px 20%;
+    padding: 50px 20%;
     background-color: var(--blue);
     color: var(--white);
 }
@@ -65,14 +64,70 @@
     object-fit: cover;
 }
 
+.text-image-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 50px 20%;
+}
+
+.text-image-bar div, .text-image-bar-colored div {
+    width: 50%;
+}
+
+.text-image-bar div img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.text-image-bar-colored {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 50px 20%;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.text-image-bar-colored div img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+    gap: 20px;
+    padding: 50px 20%;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
 @media screen and (max-width: 1450px) {
-    .hero, .info-bar {
+    .hero, .info-bar, .text-image-bar, .text-image-bar-colored, .cta-section {
         padding-left: 10%;
         padding-right: 10%;
     }
 
-    .info-bar {
+    .info-bar, .text-image-bar, .text-image-bar-colored {
         flex-direction: column;
         gap: 50px;
+    }
+
+    .text-image-bar div, .text-image-bar-colored div {
+        width: 100%;
     }
 }
