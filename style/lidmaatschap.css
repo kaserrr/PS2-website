@@ -24,7 +24,7 @@
     background-color: var(--blue);
     color: var(--white);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 275px;
 }
 
 .lidmaatschap-section .group .selected {
@@ -43,21 +43,21 @@
 }
 
 form {
-    max-width: 400px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 form input,
 form select {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--grey);
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
-    box-sizing: border-box;
+    background-color: var(--lightgrey);
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
 }
 
 form .row {
@@ -70,15 +70,21 @@ form .row input {
 }
 
 form label {
-    font-size: 14px;
-    margin-right: 10px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
+
 
 form .gender-options {
     display: flex;
     gap: 10px;
-    align-items: center;
-    font-size: 14px;
+    align-items: right;
+    font-size: 16px;
 }
 
 form button {
@@ -88,11 +94,26 @@ form button {
     border: none;
     border-radius: 4px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
 
 form button:hover {
     background-color: #e6b930;
+}
+
+.lidmaatschap-section .info, .lidmaatschap-section .lidmaatschap-info{
+    gap: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+    .lidmaatschap-section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .lidmaatschap-section .group {
+        grid-template-columns: auto;
+    }
 }
