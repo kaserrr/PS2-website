@@ -1,0 +1,43 @@
+.agenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+    gap: 50px;
+    padding: 50px 20%;
+}
+
+.agenda .agenda-info h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.agenda .agenda-info ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+}
+
+.agenda .agenda-info ul li div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--lightgray);
+    color: var(--black);
+}
+
+@media screen and (max-width: 1450px) {
+    .agenda {
+        padding-left: 10%;
+        padding-right: 10%;
+        flex-direction: column;
+    }
+}
