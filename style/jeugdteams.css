@@ -1,0 +1,58 @@
+#guppen {
+    background-image: url('../media/images/teams/guppen/team-guppen.jpg');
+}
+
+#turven {
+    background-image: url('../media/images/teams/turven/team-turven.jpg');
+}
+
+#benjamins {
+    background-image: url('../media/images/teams/benjamins/team-benjamins.jpg');
+}
+
+#minis {
+    background-image: url('../media/images/teams/minis/team-minis.jpg');
+}
+
+#cubs {
+    background-image: url('../media/images/teams/cubs/team-cubs.jpg');
+}
+
+#junioren {
+    background-image: url('../media/images/teams/junioren/team-junioren.jpg');
+}
+
+#colts {
+    background-image: url('../media/images/teams/colts/team-colts.jpg');
+}
+
+.hero {
+    background-image: url('../media/images/teams/jeugdteams-hero.jpg');
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 75px 20%;
+    justify-content: center;
+}
+
+.teams .teams-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1450px) {
+    .hero, .teams {
+        padding-left: 10%;
+        padding-right: 10%;
+        grid-template-columns: auto;
+    }
+}

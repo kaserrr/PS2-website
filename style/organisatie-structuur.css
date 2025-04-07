@@ -1,0 +1,36 @@
+.hero {
+    background-image: url('../media/images/over-ons/organisatie-structuur-hero.jpg');
+}
+
+.bestuursleden {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding: 50px 20%;
+}
+
+.bestuursleden .bestuursleden-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bestuursleden .bestuursleden-item .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.bestuursleden .bestuursleden-item img {
+    width: 214px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1450px) {
+    .bestuursleden {
+        grid-template-columns: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
