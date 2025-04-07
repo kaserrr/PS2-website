@@ -1,0 +1,11 @@
+.news {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 100px 20%;
+}
+
+.news .news-item {
+    display: flex;
+    flex-direction: column;
+}
