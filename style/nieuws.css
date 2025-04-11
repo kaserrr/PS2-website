@@ -1,6 +1,6 @@
 .news {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     gap: 30px;
     padding: 100px 20%;
 }
@@ -8,4 +8,12 @@
 .news .news-item {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1450px) {
+    .news {
+        padding-left: 10%;
+        padding-right: 10%;
+        grid-template-columns: auto;
+    }
 }

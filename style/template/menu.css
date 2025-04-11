@@ -9,7 +9,7 @@ header {
 /* === Logo === */
 #menu-logo {
     position: absolute;
-    padding: 20px 20%;
+    padding: 20px 0% 0% 20%;
     z-index: 1000;
 }
 
