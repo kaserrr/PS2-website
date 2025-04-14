@@ -1,0 +1,100 @@
+.proeftraining {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    padding: 50px 20%;
+}
+
+.proeftraining div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.proeftraining div .proeftraining-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.proeftraining div .proeftraining-image img, .proeftraining div .proeftraining-image iframe {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+}
+
+form input,
+form select {
+    padding: 10px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    background-color: var(--lightgrey);
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+}
+
+form .row {
+    display: flex;
+    gap: 10px;
+}
+
+form .row input {
+    flex: 1;
+}
+
+form label {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+form .gender-options {
+    display: flex;
+    gap: 10px;
+    align-items: right;
+    font-size: 16px;
+}
+
+form button {
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form button:hover {
+    background-color: #e6b930;
+}
+
+.lidmaatschap-section .info, .lidmaatschap-section .lidmaatschap-info{
+    gap: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+    .proeftraining {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .proeftraining {
+        grid-template-columns: auto;
+    }
+}

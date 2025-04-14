@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proeftraining</title>
+    <link rel="stylesheet" href="../style/template/style.css">
+    <link rel="stylesheet" href="../style/template/menu.css">
+    <link rel="stylesheet" href="../style/template/footer.css">
+    <link rel="stylesheet" href="../style/template/hero.css">
+    <link rel="stylesheet" href="../style/proeftraining.css">
+</head>
+<body>
+
+    <header>
+        <div id="menu-logo">
+            <a href="../index.html">
+                <img src="../media/images/general/logo.svg" alt="logo">
+            </a>
+        </div>
+
+        <div id="menu-languages">
+            <img src="../media/images/menu/british-flag.svg" alt="british-flag">
+            <img src="../media/images/menu/dutch-flag.svg" alt="dutch-flag">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+
+                <li class="dropdown">
+                    <span>Over Ons</span>
+                    <div class="dropdown-content">
+                        <a href="../pages/geschiedenis.html">Geschiedenis</a>
+                        <a href="../pages/kernwaarden.html">Kernwaarden</a>
+                        <a href="../pages/organisatie-structuur.html">Organisatie</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <span>Teams & Training</span>
+                    <div class="dropdown-content">
+                        <a href="../pages/jeugdteams.html">Jeugdteams</a>
+                        <a href="../pages/seniorenteam.html">Seniorenteam</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <span>Nieuws & Agenda</span>
+                    <div class="dropdown-content">
+                        <a href="#">Nieuws</a>
+                        <a href="#">Agenda</a>
+                    </div>
+                </li>
+
+                <li><a href="../pages/lidmaatschap.html">Lidmaatschap</a></li>
+                <li><button>Proeftraining</button></li>
+            </ul>
+
+            <div id="menu-hamburger">
+                <a href="#">
+                    <img src="../media/images/menu/menu-hamburger.svg" alt="hamburger">
+                </a>
+            </div>
+        </nav>
+
+        <div id="menu-underbar"></div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('../media/images/proeftraining/proeftraining-hero.jpg');">
+            <h1>Proeftraining</h1>
+        </section>
+
+        <section class="proeftraining">
+            <div>
+                <h2>Proeftrainen bij WRC te Werve</h2>
+                <p>Een proeftraining bij WRC Te Werve is de perfecte manier om kennis te maken met rugby. Onze ervaren 
+                    trainers begeleiden je door de basisvaardigheden zoals passen, rennen en tackelen, afhankelijk van je 
+                    leeftijdsgroep. Je hoeft niets mee te nemen behalve sportkleding en een goede dosis energie! We zorgen 
+                    voor een leuke en leerzame training waarin je kunt ontdekken of rugby bij je past.</p>
+                <h2>Goed om te weten voor je proeftraining</h2>
+                <p> ✅ Voor wie? Iedereen van 4 jaar en ouder<br>✅ Wat heb je nodig? Sportkleding en schoenen met grip<br>
+                    ✅ Waar? WRC Te Werve, Beresteinlaan 52, Den Haag<br>✅ Wanneer? Dagen en tijden verschillen per leeftijdsgroep<br>
+                    ✅ Kosten? De eerste proeftraining is gratis</p>
+                <div class="proeftraining-image">
+                    <img src="../media/images/proeftraining/proeftrainen.jpg" alt="proeftrainen">
+                    <iframe width="100%" height="200" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=17&center=52.0378%2C4.2608&key="></iframe>
+                </div>
+            </div>
+            <div>
+                <form id="lidmaatschap-formulier">
+                    <input type="hidden" name="lidmaatschapstype" id="lidmaatschapstype" value="Jeugd Guppen">
+            
+                    <div class="row">
+                        <input type="text" placeholder="Voornaam" name="voornaam" required>
+                        <input type="text" placeholder="Achternaam" name="achternaam" required>
+                    </div>
+            
+                    <input type="text" placeholder="Geboorteplaats" name="geboorteplaats" required>
+                    <input type="date" placeholder="Geboortedatum" name="geboortedatum" required>
+            
+                    <div>
+                        <label><input type="radio" name="geslacht" value="Man"> Man</label>
+                        <label><input type="radio" name="geslacht" value="Vrouw"> Vrouw</label>
+                        <label><input type="radio" name="geslacht" value="Anders"> Anders</label>
+                    </div>
+            
+                    <select name="nationaliteit" required>
+                        <option value="">Nationaliteit</option>
+                        <option value="Nederland">Nederland</option>
+                        <option value="België">België</option>
+                        <option value="Anders">Anders</option>
+                    </select>
+            
+                    <div class="row">
+                        <input type="text" placeholder="Straat" name="straat" required>
+                        <input type="text" placeholder="Huisnummer" name="huisnummer" required>
+                    </div>
+            
+                    <div class="row">
+                        <input type="text" placeholder="Plaats" name="plaats" required>
+                        <input type="text" placeholder="Postcode" name="postcode" required>
+                    </div>
+            
+                    <select name="land" required>
+                        <option value="">Land</option>
+                        <option value="Nederland">Nederland</option>
+                        <option value="België">België</option>
+                        <option value="Duitsland">Duitsland</option>
+                    </select>
+            
+                    <input type="email" placeholder="E-mailadres" name="email" required>
+                    <input type="tel" placeholder="Telefoonnummer" name="telefoonnummer" required>
+            
+                    <button type="submit">Lid Worden</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="../media/images/general/logo.svg" alt="logo">
+            <a href="mailto:info@wrctewerve.com">info@wrctewerve.com</a>
+            <a href="tel:064833552">064833552</a>
+            <a target="_blank" href="https://maps.app.goo.gl/hET8coi9N8Bn5TpUA">Beresteinlaan 52, 2542 KC Den Haag</a>
+        </div>
+        <div>
+            <h2>Links</h2>
+            <a href="../index.html">Home</a>
+            <a href="../pages/geschiedenis.html">Geschiedenis</a>
+            <a href="../pages/kernwaarden.html">Kernwaarden</a>
+            <a href="../pages/organisatie-structuur.html">Bestuursleden</a>
+            <a href="../pages/jeugdteams.html">Jeugdteams</a>
+            <a href="../pages/seniorenteam.html">Seniorenteam</a>
+            <a href="#proeftraining">Proeftraining</a>
+            <a href="#lidmaatschap">Lidmaatschap</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#nieuws">Nieuws</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div>
+            <h2>Informatie</h2>
+            <a href="#algemenevoorwaarden">Algemene voorwaarden</a>
+            <a href="#privacy policy">Privacy policy</a>
+        </div>
+        <div>
+            <h2>Google Maps</h2>
+            <iframe width="100%" height="200" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=17&center=52.0378%2C4.2608&key="></iframe>
+        </div>
+    </footer>
+
+    <section class="footer-bottom">
+        <div>
+            <a>Copyright &copy; 2025 | Website en seo door Sliswebdesign</a>
+        </div>
+    </section>
+
+    <script src="../script/lidmaatschap/script.js"></script>
+</body>
+</html>
