@@ -1,3 +1,6 @@
+/* Call to Action Section Styles */
+
+/* Main layout for CTA section */
 .cta-section {
     display: flex;
     flex-direction: column;
@@ -10,7 +13,9 @@
     color: var(--white);
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1450px) {
+    /* Adjust padding for smaller screens */
     .cta-section {
         padding-left: 10%;
         padding-right: 10%;

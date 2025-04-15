@@ -18,8 +18,9 @@
 }
 
 .proeftraining div .proeftraining-image img, .proeftraining div .proeftraining-image iframe {
-    width: 100%;
     height: auto;
+    width: 49%;
+    gap: 20px;
 }
 
 form {

@@ -1,3 +1,6 @@
+/* Text Image Section Styles */
+
+/* Main layout for text-image section */
 .text-image-bar {
     display: flex;
     flex-direction: row;
@@ -8,10 +11,12 @@
     padding: 100px 20%;
 }
 
+/* Div styles for both sections */
 .text-image-bar div, .text-image-bar-colored div {
     width: 50%;
 }
 
+/* Image styles for text-image section */
 .text-image-bar div img {
     width: 100%;
     height: auto;
@@ -19,6 +24,7 @@
     object-fit: cover;
 }
 
+/* Colored section layout */
 .text-image-bar-colored {
     display: flex;
     flex-direction: row-reverse;
@@ -31,6 +37,7 @@
     color: var(--white);
 }
 
+/* Image styles for colored section */
 .text-image-bar-colored div img {
     width: 100%;
     height: auto;
@@ -38,18 +45,22 @@
     object-fit: cover;
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1450px) {
+    /* Adjust padding for smaller screens */
     .text-image-bar, .text-image-bar-colored {
         padding-left: 10%;
         padding-right: 10%;
     }
 
+    /* Stack items vertically */
     .text-image-bar, .text-image-bar-colored {
         flex-direction: column;
         grid-template-columns: repeat(1, 100%);
         gap: 50px;
     }
 
+    /* Full width for divs */
     .text-image-bar div, .text-image-bar-colored div {
         width: 100%;
     }

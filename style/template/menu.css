@@ -1,4 +1,6 @@
-/* === Sticky Header === */
+/* Menu Styles */
+
+/* Sticky Header */
 header {
     position: sticky;
     top: 0;
@@ -6,14 +8,14 @@ header {
     overflow: visible;
 }
 
-/* === Logo === */
+/* Logo */
 #menu-logo {
     position: absolute;
     padding: 20px 0% 0% 20%;
     z-index: 1000;
 }
 
-/* === Language Selector === */
+/* Language Selector */
 #menu-languages {
     display: flex;
     justify-content: flex-end;
@@ -27,7 +29,7 @@ header {
     width: 30px;
 }
 
-/* === Navigation Bar === */
+/* Navigation Bar */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -39,7 +41,7 @@ nav {
     overflow: visible;
 }
 
-/* === Navigation Items === */
+/* Navigation Items */
 nav ul {
     display: flex;
     align-items: center;
@@ -55,7 +57,7 @@ nav ul li {
     margin-bottom: 5px;
 }
 
-/* === Links === */
+/* Links */
 nav ul li a,
 nav ul li span {
     color: var(--white);
@@ -68,7 +70,7 @@ nav ul li span:hover {
     color: var(--yellow);
 }
 
-/* === Dropdown === */
+/* Dropdown */
 .dropdown-content {
     position: absolute;
     top: 100%;
@@ -78,7 +80,7 @@ nav ul li span:hover {
     background-color: var(--blue);
     min-width: 160px;
     padding: 5px 0;
-    z-index: 9999; /* Verhoog de z-index */
+    z-index: 9999;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
@@ -94,34 +96,37 @@ nav ul li span:hover {
     color: var(--yellow);
 }
 
-/* === Show dropdown on hover === */
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
     opacity: 1;
     visibility: visible;
 }
 
-/* === Underbar === */
+/* Underbar */
 #menu-underbar {
     background-color: var(--yellow);
     padding: 5px;
 }
 
-/* === Hamburger Menu Icon (hidden by default) === */
+/* Hamburger Menu Icon (hidden by default) */
 #menu-hamburger {
     display: none;
 }
 
-/* === Responsive Rules === */
+/* Responsive Rules */
 @media screen and (max-width: 1450px) {
+    /* Adjust padding for smaller screens */
     #menu-logo, #menu-languages, nav {
         padding-left: 10%;
         padding-right: 10%; 
     }
 
+    /* Hide Normal Menu */
     nav ul {
         display: none;
     }
 
+    /* Show hamburger menu icon */
     #menu-hamburger {
         display: block;
         cursor: pointer;

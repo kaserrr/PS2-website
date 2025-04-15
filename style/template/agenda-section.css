@@ -1,3 +1,6 @@
+/* Agenda Section Styles */
+
+/* Main layout for agenda section */
 .agenda {
     display: flex;
     flex-direction: row;
@@ -9,6 +12,7 @@
     padding: 50px 20%;
 }
 
+/* Agenda title styles */
 .agenda .agenda-info h3 {
     display: flex;
     justify-content: center;
@@ -16,6 +20,7 @@
     margin-bottom: 10px;
 }
 
+/* Agenda list styles */
 .agenda .agenda-info ul {
     display: flex;
     flex-direction: row;
@@ -23,6 +28,7 @@
     list-style: none;
 }
 
+/* Agenda item styles */
 .agenda .agenda-info ul li div {
     display: flex;
     flex-direction: column;
@@ -34,7 +40,9 @@
     color: var(--black);
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1450px) {
+    /* Adjust layout for smaller screens */
     .agenda {
         padding-left: 10%;
         padding-right: 10%;
