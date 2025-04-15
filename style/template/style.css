@@ -92,3 +92,215 @@ a, li, span {
     text-decoration: none;
     color: var(--white);
 }
+
+/* Menu Styles */
+
+/* Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: visible;
+}
+
+/* Logo */
+#menu-logo {
+    position: absolute;
+    padding: 20px 0% 0% 20%;
+    z-index: 1000;
+}
+
+/* Language Selector */
+#menu-languages {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--darkblue);
+    padding: 10px 20%;
+}
+
+#menu-languages img {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 30px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 25px 20%;
+    height: 75px;
+    position: relative;
+    overflow: visible;
+}
+
+/* Navigation Items */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+/* Links */
+nav ul li a,
+nav ul li span {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li span:hover {
+    color: var(--yellow);
+}
+
+/* Dropdown */
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--blue);
+    min-width: 160px;
+    padding: 5px 0;
+    z-index: 9999;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 5px 10px;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    color: var(--yellow);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Underbar */
+#menu-underbar {
+    background-color: var(--yellow);
+    padding: 5px;
+}
+
+/* Hamburger Menu Icon (hidden by default) */
+#menu-hamburger {
+    display: none;
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 1650px) {
+    /* Hide Normal Menu */
+    nav ul {
+        display: none;
+    }
+
+    /* Show hamburger menu icon */
+    #menu-hamburger {
+        display: block;
+        cursor: pointer;
+        color: var(--white);
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    /* Adjust padding for smaller screens */
+    #menu-logo, #menu-languages, nav {
+        padding-left: 10%;
+        padding-right: 10%; 
+    }
+}
+
+/* Hero Section Styles */
+
+/* Section Style for Hero */
+.hero {
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    padding: 0% 20%;
+}
+
+/* Footer Styles */
+
+/* Main footer layout */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 20px;
+    padding: 100px 20%;
+    background-color: var(--gray);
+    color: var(--white);
+    margin-top: 100px;
+}
+
+/* Footer column styles */
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+    gap: 10px;
+}
+
+/* Footer links */
+footer div a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Footer bottom bar */
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+/* Responsive footer styles */
+@media screen and (max-width: 1450px) {
+    /* Adjust footer padding */
+    footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /* Stack footer columns vertically */
+    footer {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 100%);
+        gap: 50px;
+    }
+}
