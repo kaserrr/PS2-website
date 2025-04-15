@@ -1,4 +1,4 @@
-
+/* Lidmaatschap Page Script */
 
 // Selecteer alle benodigde elementen
 const groupItems = document.querySelectorAll('.group-item');
