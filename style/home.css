@@ -1,3 +1,6 @@
+/* Home page styles */
+
+/* Hero section styles */
 .hero {
     background-image: url('../media/images/home/hero.jpg');
     background-size: cover;
@@ -13,6 +16,7 @@
     padding: 20% 20%;
 }
 
+/* Info bar layout */
 .info-bar {
     display: flex;
     flex-direction: row;
@@ -23,6 +27,7 @@
     color: var(--white);
 }
 
+/* Info bar item styles */
 .info-bar .info-bar-item {
     display: flex;
     flex-direction: column;
@@ -31,6 +36,7 @@
     gap: 20px;
 }
 
+/* Match section styles */
 .info-bar .info-bar-item .match {
     display: flex;
     justify-content: space-around;
@@ -39,6 +45,7 @@
     width: 100%;
 }
 
+/* News section styles */
 .info-bar .info-bar-item .news {
     display: flex;
     flex-direction: column;
@@ -48,6 +55,7 @@
     width: 100%;
 }
 
+/* News article styles */
 .info-bar .info-bar-item .news article {
     display: flex;
     flex-direction: row;
@@ -58,88 +66,108 @@
     width: 100%;
 }
 
+/* News article image styles */
 .info-bar .info-bar-item .news article img {
     width: 50px;
     height: 50px;
     object-fit: cover;
 }
 
+/* Mobile news section styles */
 .info-bar .info-bar-item .news-mobile {
     display: none;
 }
 
+/* Responsive styles for screens smaller than 1450px */
 @media screen and (max-width: 1450px) {
+    /* Adjust padding for smaller screens */
     .hero, .info-bar, .text-image-bar, .text-image-bar-colored {
         padding-left: 10%;
         padding-right: 10%;
     }
 
+    /* Stack info bar items vertically */
     .info-bar, .text-image-bar, .text-image-bar-colored {
         flex-direction: column;
         grid-template-columns: repeat(1, 100%);
         gap: 50px;
     }
 
+    /* Full width for text-image sections */
     .text-image-bar div, .text-image-bar-colored div {
         width: 100%;
     }
 
+    /* Center news articles */
     .info-bar .info-bar-item .news article {
         justify-content: center;
     }
 }
 
+/* Responsive styles for screens smaller than 1024px */
 @media screen and (max-width: 1024px) {
+    /* Adjust hero section */
     .hero {
         padding: 15%;
         height: 40vh;
     }
 
+    /* Adjust info bar padding and gap */
     .info-bar {
         padding: 70px 15%;
         gap: 40px;
     }
 
+    /* Adjust news article gap */
     .info-bar .info-bar-item .news article {
         gap: 15px;
     }
 
+    /* Adjust news article image size */
     .info-bar .info-bar-item .news article img {
         width: 45px;
         height: 45px;
     }
 }
 
+/* Responsive styles for screens smaller than 768px */
 @media screen and (max-width: 768px) {
+    /* Adjust hero section */
     .hero {
         padding: 10%;
         height: auto;
     }
 
+    /* Stack info bar items vertically */
     .info-bar {
         flex-direction: column;
         padding: 50px 10%;
         gap: 30px;
     }
 
+    /* Adjust info bar item gap */
     .info-bar .info-bar-item {
         gap: 15px;
     }
 
+    /* Show mobile news section */
     .info-bar .info-bar-item .news-mobile {
         display: block;
     }
 
+    /* Hide desktop news section */
     .info-bar .info-bar-item .news {
         display: none;
     }
 
+    /* Mobile news article styles */
     .info-bar .info-bar-item .news-mobile article {
         flex-direction: row;
         text-align: left;
         gap: 10px;
     }
 
+    /* Mobile news article image styles */
     .info-bar .info-bar-item .news-mobile article img {
         width: 40px;
         height: 40px;

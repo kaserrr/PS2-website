@@ -1,3 +1,6 @@
+/* News Page Styles */
+
+/* News section layout */
 .news {
     display: grid;
     grid-template-columns: auto auto;
@@ -5,12 +8,15 @@
     padding: 100px 20%;
 }
 
+/* Individual news item styles */
 .news .news-item {
     display: flex;
     flex-direction: column;
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1450px) {
+    /* Adjust padding and grid layout */
     .news {
         padding-left: 10%;
         padding-right: 10%;

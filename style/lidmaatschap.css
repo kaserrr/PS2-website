@@ -1,3 +1,6 @@
+/* Lidmaatschap Page Styles */
+
+/* Main layout for lidmaatschap section */
 .lidmaatschap-section {
     display: flex;
     flex-direction: row;
@@ -6,12 +9,14 @@
     gap: 20px;
 }
 
+/* Group layout for membership options */
 .lidmaatschap-section .group {
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
 }
 
+/* Individual group item styles */
 .lidmaatschap-section .group .group-item {
     display: flex;
     flex-direction: column;
@@ -28,27 +33,27 @@
     cursor: pointer;
 }
 
+/* Selected group item styles */
 .lidmaatschap-section .group .selected {
     background-color: var(--yellow) !important;
     color: var(--black) !important;
 }
 
+/* Info section layout */
 .lidmaatschap-section .info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.lidmaatschap-section .info form {
-    height: 100%;
-}
-
+/* Form layout */
 form {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
+/* Input and select field styles */
 form input,
 form select {
     padding: 10px;
@@ -61,15 +66,18 @@ form select {
     font-family: 'Inter', sans-serif;
 }
 
+/* Row layout for form inputs */
 form .row {
     display: flex;
     gap: 10px;
 }
 
+/* Row input styles */
 form .row input {
     flex: 1;
 }
 
+/* Label styles */
 form label {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -80,7 +88,7 @@ form label {
     width: 100%;
 }
 
-
+/* Gender options layout */
 form .gender-options {
     display: flex;
     gap: 10px;
@@ -88,6 +96,7 @@ form .gender-options {
     font-size: 16px;
 }
 
+/* Button styles */
 form button {
     background-color: var(--yellow);
     color: var(--black);
@@ -100,20 +109,25 @@ form button {
     transition: background-color 0.2s ease;
 }
 
+/* Button hover effect */
 form button:hover {
     background-color: #e6b930;
 }
 
-.lidmaatschap-section .info, .lidmaatschap-section .lidmaatschap-info{
+/* Info section gap adjustment */
+.lidmaatschap-section .info, .lidmaatschap-section .lidmaatschap-info {
     gap: 20px;
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1450px) {
+    /* Adjust padding for smaller screens */
     .lidmaatschap-section {
         padding-left: 10%;
         padding-right: 10%;
     }
 
+    /* Stack group items vertically */
     .lidmaatschap-section .group {
         grid-template-columns: auto;
     }

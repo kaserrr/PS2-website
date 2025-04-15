@@ -1,7 +1,11 @@
+/* Organisatie Structuur Page Styles */
+
+/* Hero section background image */
 .hero {
     background-image: url('../media/images/over-ons/organisatie-structuur-hero.jpg');
 }
 
+/* Layout for bestuursleden section */
 .bestuursleden {
     display: grid;
     grid-template-columns: auto auto;
@@ -9,12 +13,14 @@
     padding: 50px 20%;
 }
 
+/* Individual bestuursleden item layout */
 .bestuursleden .bestuursleden-item {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
+/* Info section for bestuursleden */
 .bestuursleden .bestuursleden-item .info {
     display: flex;
     flex-direction: column;
@@ -22,12 +28,15 @@
     padding-bottom: 10px;
 }
 
+/* Image styles for bestuursleden */
 .bestuursleden .bestuursleden-item img {
     width: 214px;
     height: 200px;
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1450px) {
+    /* Adjust grid layout and padding */
     .bestuursleden {
         grid-template-columns: auto;
         padding-left: 10%;

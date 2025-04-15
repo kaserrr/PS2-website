@@ -1,35 +1,46 @@
+/* Jeugdteams Page Styles */
+
+/* Background image for Guppen team */
 #guppen {
     background-image: url('../media/images/teams/guppen/team-guppen.jpg');
 }
 
+/* Background image for Turven team */
 #turven {
     background-image: url('../media/images/teams/turven/team-turven.jpg');
 }
 
+/* Background image for Benjamins team */
 #benjamins {
     background-image: url('../media/images/teams/benjamins/team-benjamins.jpg');
 }
 
+/* Background image for Minis team */
 #minis {
     background-image: url('../media/images/teams/minis/team-minis.jpg');
 }
 
+/* Background image for Cubs team */
 #cubs {
     background-image: url('../media/images/teams/cubs/team-cubs.jpg');
 }
 
+/* Background image for Junioren team */
 #junioren {
     background-image: url('../media/images/teams/junioren/team-junioren.jpg');
 }
 
+/* Background image for Colts team */
 #colts {
     background-image: url('../media/images/teams/colts/team-colts.jpg');
 }
 
+/* Hero section background image */
 .hero {
     background-image: url('../media/images/teams/jeugdteams-hero.jpg');
 }
 
+/* Teams grid layout */
 .teams {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -38,6 +49,7 @@
     justify-content: center;
 }
 
+/* Individual team item styles */
 .teams .teams-item {
     display: flex;
     justify-content: center;
@@ -49,7 +61,9 @@
     cursor: pointer;
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1450px) {
+    /* Adjust padding and grid layout */
     .hero, .teams {
         padding-left: 10%;
         padding-right: 10%;

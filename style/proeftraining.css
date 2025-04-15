@@ -1,3 +1,6 @@
+/* Proeftraining Page Styles */
+
+/* Layout for proeftraining section */
 .proeftraining {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -5,6 +8,7 @@
     padding: 50px 20%;
 }
 
+/* Layout for proeftraining divs */
 .proeftraining div {
     display: flex;
     flex-direction: column;
@@ -12,17 +16,21 @@
     height: 100%;
 }
 
+/* Layout for proeftraining images */
 .proeftraining div .proeftraining-image {
     display: flex;
     flex-direction: row;
 }
 
-.proeftraining div .proeftraining-image img, .proeftraining div .proeftraining-image iframe {
+/* Styles for images and iframes */
+.proeftraining div .proeftraining-image img, 
+.proeftraining div .proeftraining-image iframe {
     height: auto;
     width: 49%;
     gap: 20px;
 }
 
+/* Form layout */
 form {
     display: flex;
     flex-direction: column;
@@ -30,6 +38,7 @@ form {
     height: 100%;
 }
 
+/* Input and select field styles */
 form input,
 form select {
     padding: 10px;
@@ -42,15 +51,18 @@ form select {
     font-family: 'Inter', sans-serif;
 }
 
+/* Row layout for form inputs */
 form .row {
     display: flex;
     gap: 10px;
 }
 
+/* Row input styles */
 form .row input {
     flex: 1;
 }
 
+/* Label styles */
 form label {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -61,7 +73,7 @@ form label {
     width: 100%;
 }
 
-
+/* Gender options layout */
 form .gender-options {
     display: flex;
     gap: 10px;
@@ -69,6 +81,7 @@ form .gender-options {
     font-size: 16px;
 }
 
+/* Button styles */
 form button {
     background-color: var(--yellow);
     color: var(--black);
@@ -81,20 +94,26 @@ form button {
     transition: background-color 0.2s ease;
 }
 
+/* Button hover effect */
 form button:hover {
     background-color: #e6b930;
 }
 
-.lidmaatschap-section .info, .lidmaatschap-section .lidmaatschap-info{
+/* Info section gap adjustment */
+.lidmaatschap-section .info, 
+.lidmaatschap-section .lidmaatschap-info {
     gap: 20px;
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1450px) {
+    /* Adjust padding for smaller screens */
     .proeftraining {
         padding-left: 10%;
         padding-right: 10%;
     }
 
+    /* Stack grid items vertically */
     .proeftraining {
         grid-template-columns: auto;
     }
