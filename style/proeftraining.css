@@ -4,7 +4,7 @@
 .proeftraining {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 30px;
+    gap: 40px; /* Vergroot de gap tussen de twee kolommen */
     padding: 50px 20%;
 }
 
@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px; /* Voeg een gap toe tussen de elementen binnen de div */
     height: 100%;
 }
 
@@ -20,6 +21,7 @@
 .proeftraining div .proeftraining-image {
     display: flex;
     flex-direction: row;
+    gap: 20px; /* Zorg voor ruimte tussen de afbeeldingen/iframes */
 }
 
 /* Styles for images and iframes */
@@ -27,14 +29,13 @@
 .proeftraining div .proeftraining-image iframe {
     height: auto;
     width: 49%;
-    gap: 20px;
 }
 
 /* Form layout */
 form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px; /* Vergroot de gap tussen de form-elementen */
     height: 100%;
 }
 
@@ -54,7 +55,7 @@ form select {
 /* Row layout for form inputs */
 form .row {
     display: flex;
-    gap: 10px;
+    gap: 15px; /* Vergroot de gap tussen de inputs in een rij */
 }
 
 /* Row input styles */
@@ -76,8 +77,8 @@ form label {
 /* Gender options layout */
 form .gender-options {
     display: flex;
-    gap: 10px;
-    align-items: right;
+    gap: 15px; /* Zorg voor ruimte tussen de gender-opties */
+    align-items: center;
     font-size: 16px;
 }
 
@@ -116,5 +117,6 @@ form button:hover {
     /* Stack grid items vertically */
     .proeftraining {
         grid-template-columns: auto;
+        gap: 30px; /* Pas de gap aan voor verticale layout */
     }
 }

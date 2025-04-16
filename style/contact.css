@@ -1,0 +1,114 @@
+/* Contact page styles */
+
+/* Layout for contact container */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 75px 20%;
+    width: 100%;
+    gap: 30px;
+}
+
+/* Layout for individual contact sections */
+.contact-container .contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Info section styles */
+.contact-container .contact-div .contact-div-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--blue);
+    padding: 20px;
+    color: var(--white);
+}
+
+/* Layout for images in contact section */
+.contact-container .contact-div .contact-div-images {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+/* Image styles */
+.contact-container .contact-div .contact-div-images img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Iframe styles */
+.contact-container .contact-div .contact-div-images iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact form layout */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Layout for form rows */
+.contact-form .row {
+    display: flex;
+    gap: 10px;
+}
+
+/* Input and textarea styles */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Textarea specific styles */
+.contact-form textarea {
+    resize: none;
+}
+
+/* Button styles */
+.contact-form button {
+    background-color: #ffc107;
+    color: #000;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+    background-color: #e0a800;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1450px) {
+    /* Adjust padding for smaller screens */
+    .contact-container {
+        padding-left: 10%;
+        padding-right: 10%; 
+    }
+
+    /* Stack contact sections vertically */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
